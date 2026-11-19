@@ -13,11 +13,13 @@ try:  # Support both direct execution and ``import validator.validate``.
     from .io_utils import load_delivery, write_json
     from .label_rules import validate_labels
     from .metadata_rules import validate_metadata
+    from .panoptic_rules import validate_panoptic
 except ImportError:
     from file_metadata import Error, validate_file_metadata
     from io_utils import load_delivery, write_json
     from label_rules import validate_labels
     from metadata_rules import validate_metadata
+    from panoptic_rules import validate_panoptic
 
 
 def normalize_errors(findings: Iterable[Error]) -> list[Error]:
@@ -46,6 +48,7 @@ def collect_errors(delivery: Path, data: dict[str, Any]) -> list[Error]:
     findings.extend(validate_file_metadata(delivery, data["manifest"]))
     findings.extend(validate_metadata(data["metadata"], data["jobs"]))
     findings.extend(validate_labels(delivery, data["manifest"], data["panoptic"]))
+    findings.extend(validate_panoptic(delivery, data["manifest"], data["panoptic"]))
     return normalize_errors(findings)
 
 
