@@ -1,4 +1,4 @@
 image,type,verdict,note
-000000004395,missing_box,,
-000000016249,class_swap,,
-000000023937,class_swap,,
+000000004395,missing_box,confirmed,"chân dung một người đàn ông áo sơ mi trắng thắt cà vạt chiếm gần hết khung ảnh; panoptic có segment person phủ cả ảnh nhưng detection chỉ có box tie, thiếu box person"
+000000016249,class_swap,rejected,"cụ ông đeo kính ngồi đọc báo trên ghế băng sắt xanh: người và ghế chồng lên nhau nên bị ghép nhầm; detection có cả box person lẫn box bench khớp đúng segment cùng lớp, lệch tự nhiên"
+000000023937,class_swap,rejected,"hai con vật lông trắng nằm sau bụi cỏ dại cạnh gốc cây, che khuất nhiều; mỗi box detection (sheep, cow) đều trùng segment panoptic cùng lớp, chỉ do hai box chồng nhau nên ghép chéo"
