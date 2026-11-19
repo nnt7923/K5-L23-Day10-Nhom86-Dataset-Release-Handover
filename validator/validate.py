@@ -9,12 +9,16 @@ from pathlib import Path
 from typing import Any, Iterable, Sequence
 
 try:  # Support both direct execution and ``import validator.validate``.
+    from .cross_check import find_swap_and_drift_candidates
+    from .cross_check_b import find_missing_and_merge_candidates
     from .file_metadata import Error, validate_file_metadata
     from .io_utils import load_delivery, write_json
     from .label_rules import validate_labels
     from .metadata_rules import validate_metadata
     from .panoptic_rules import validate_panoptic
 except ImportError:
+    from cross_check import find_swap_and_drift_candidates
+    from cross_check_b import find_missing_and_merge_candidates
     from file_metadata import Error, validate_file_metadata
     from io_utils import load_delivery, write_json
     from label_rules import validate_labels
@@ -52,6 +56,42 @@ def collect_errors(delivery: Path, data: dict[str, Any]) -> list[Error]:
     return normalize_errors(findings)
 
 
+def rule_error_image_ids(errors: Iterable[Error]) -> set[str]:
+    """Return images that must not enter the semantic review queue.
+
+    Every rule finding targets an image except ``scene_leak``. A scene leak is
+    a split-level problem and does not establish that each image's semantic
+    labels are invalid, so its scene target is deliberately not excluded.
+    """
+
+    return {
+        str(error["target"])
+        for error in errors
+        if error.get("type") != "scene_leak"
+    }
+
+
+def collect_candidates(
+    delivery: Path,
+    errors: Iterable[Error],
+) -> list[dict[str, Any]]:
+    """Run both P2 modules and remove candidates already covered by rules.
+
+    Candidate records are deliberately neither deduplicated nor confirmed:
+    separate objects may legitimately share the same image and semantic type.
+    """
+
+    candidates: list[dict[str, Any]] = []
+    candidates.extend(find_swap_and_drift_candidates(delivery))
+    candidates.extend(find_missing_and_merge_candidates(delivery))
+    excluded_images = rule_error_image_ids(errors)
+    return [
+        candidate
+        for candidate in candidates
+        if str(candidate.get("image")) not in excluded_images
+    ]
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Validate a dataset delivery")
     parser.add_argument("delivery", type=Path, help="delivery directory to validate")
@@ -72,7 +112,8 @@ def main(argv: Sequence[str] | None = None) -> int:
         errors = collect_errors(args.delivery.resolve(), data)
         write_json(args.out, {"errors": errors})
         if args.candidates is not None:
-            write_json(args.candidates, {"candidates": []})
+            candidates = collect_candidates(args.delivery.resolve(), errors)
+            write_json(args.candidates, {"candidates": candidates})
     except (OSError, ValueError, json.JSONDecodeError) as exc:
         parser.error(str(exc))
     return 0
