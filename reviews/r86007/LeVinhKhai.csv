@@ -1,0 +1,4 @@
+image,type,verdict,note
+000000003845,class_swap,,
+000000015497,class_swap,,
+000000022935,bbox_drift,,
