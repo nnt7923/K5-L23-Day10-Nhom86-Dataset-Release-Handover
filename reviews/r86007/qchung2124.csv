@@ -1,4 +1,5 @@
 image,type,verdict,note
-000000009914,class_swap,,
-000000018193,class_swap,,
-000000025393,class_swap,,
+000000009914,class_swap,confirmed,Banh mi kep (sandwich) vo me tren dia cung khoai tay chien; detection gan nham thanh hot dog
+000000018193,class_swap,rejected,Nguoi phu nu ngoi tren ghe xep ngoai troi; box ghe va mask nguoi chong lan tu nhien (IoU=0.57) khong phai trao nhan
+000000018193,class_swap,rejected,Nguoi phu nu ngoi tren ghe xep ngoai troi; box nguoi va mask ghe chong lan tu nhien (IoU=0.57) khong phai trao nhan
+000000025393,class_swap,confirmed,Trong anh la hai nguoi dan ong di bo qua duong; detection gan nham mot nguoi thanh fire hydrant (IoU=1.00)
