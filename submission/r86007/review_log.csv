@@ -1,0 +1,23 @@
+image,type,verdict,note
+000000003845,class_swap,rejected,Hai dụng cụ ăn nằm chồng lấn nhưng là hai vật thể riêng biệt. Nhãn dĩa và thìa không bị tráo; thuật toán đối chiếu nhầm hai đối tượng.
+000000015497,class_swap,rejected,"Detection đánh dấu ghế sofa, còn panoptic phân vùng đúng con mèo đang nằm trên ghế. Đây là sự chồng lấn tự nhiên giữa hai vật thể, không phải lỗi tráo nhãn."
+000000022935,bbox_drift,rejected,"Bounding box detection bao đúng cầu thủ áo xanh phía trước. Sự khác biệt xuất phát từ việc panoptic gộp hai người vào cùng một segment, không phải box bị lệch."
+000000022935,instance_merge,confirmed,"Một segment person của panoptic bao phủ cả cầu thủ áo xanh phía trước và cầu thủ áo vàng phía sau, trong khi detection có hai bounding box riêng biệt."
+000000010092,class_swap,rejected,"ghế và bàn tròn ở mép phải; det có box chair và dining table riêng, pan cũng có hai segment tương ứng, chỉ chồng nhau vì ghế nằm sau bàn"
+000000019402,bbox_drift,confirmed,"người mặc áo hood lông bên phải ra ngoài mép phải của box det khoảng 120px, box lệch trái so với thân người"
+000000009590,class_swap,rejected,"Chén trà xanh nhỏ không quai trên bàn tiệc, COCO gắn đồng thời cả cup và bowl, độ lệch tự nhiên giữa hai nguồn"
+000000016451,class_swap,rejected,"Chiếc túi giữ nhiệt màu đỏ duy nhất trên cát, detection gán handbag còn panoptic dán backpack nửa trên; bất đồng nhãn tự nhiên của COCO trên cùng 1 vật"
+000000024021,class_swap,confirmed,"Ảnh chụp tập thể đông người năm 1929 gồm thầy giáo và học sinh, có đúng 1 người (person) trong đám đông bị nhãn detection dán nhầm thành thìa (spoon)"
+000000013597,class_swap,rejected,"Ảnh cận cảnh miếng bánh kem trên đĩa. Detection đã có box cake riêng khớp đúng miếng bánh (gần trùng bbox panoptic cake). Box dining table phủ cả khung hình là bàn bên dưới đĩa, bị ghép nhầm với segment cake; không phải đổi lớp, là lệch tự nhiên"
+000000022705,class_swap,rejected,"Cô gái váy đen cầm ly rượu đứng trước tủ lạnh inox. Box person của detection trùng gần như tuyệt đối với mask person, lớp đúng. Hai cặp swap là do ghép chéo nhầm với box refrigerator bị lệch, không có nhãn nào bị đổi lớp"
+000000022705,bbox_drift,confirmed,"Box refrigerator cùng kích thước với tủ lạnh (khoảng 256x499) nhưng bị dịch xuống khoảng 93px và sang trái khoảng 19px: cạnh trên nằm ngang ngực cô gái, cạnh dưới tràn xuống sàn gạch, trong khi nóc tủ lạnh ở ngang tủ bếp phía trên"
+000000004395,missing_box,confirmed,"chân dung một người đàn ông áo sơ mi trắng thắt cà vạt chiếm gần hết khung ảnh; panoptic có segment person phủ cả ảnh nhưng detection chỉ có box tie, thiếu box person"
+000000016249,class_swap,rejected,"cụ ông đeo kính ngồi đọc báo trên ghế băng sắt xanh: người và ghế chồng lên nhau nên bị ghép nhầm; detection có cả box person lẫn box bench khớp đúng segment cùng lớp, lệch tự nhiên"
+000000023937,class_swap,rejected,"hai con vật lông trắng nằm sau bụi cỏ dại cạnh gốc cây, che khuất nhiều; mỗi box detection (sheep, cow) đều trùng segment panoptic cùng lớp, chỉ do hai box chồng nhau nên ghép chéo"
+000000000776,class_swap,rejected,"box bed phủ gần cả ảnh là cái giường, mask teddy bear là con gấu bông nằm trên đó; hai vật khác nhau chồng lên nhau, code ghép nhầm chứ không phải lỗi nhãn"
+000000015440,class_swap,confirmed,"chiếc xe đậu sau cột biển STOP là xe tải; detection ghi bus là sai, panoptic ghi truck là đúng"
+000000022892,category_swap,confirmed,"box detection cat đúng là con mèo và box chair đúng là cái ghế; panoptic gán ngược nhãn hai segment (mèo ghi chair, ghế ghi cat)"
+000000009914,class_swap,confirmed,Banh mi kep (sandwich) vo me tren dia cung khoai tay chien; detection gan nham thanh hot dog
+000000018193,class_swap,rejected,Nguoi phu nu ngoi tren ghe xep ngoai troi; box ghe va mask nguoi chong lan tu nhien (IoU=0.57) khong phai trao nhan
+000000018193,class_swap,rejected,Nguoi phu nu ngoi tren ghe xep ngoai troi; box nguoi va mask ghe chong lan tu nhien (IoU=0.57) khong phai trao nhan
+000000025393,class_swap,confirmed,Trong anh la hai nguoi dan ong di bo qua duong; detection gan nham mot nguoi thanh fire hydrant (IoU=1.00)
