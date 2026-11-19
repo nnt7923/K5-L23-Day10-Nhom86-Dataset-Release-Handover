@@ -34,14 +34,14 @@ FIX_IN_V2 = {"wrong_hash", "guideline_mismatch", "scene_leak"}
 THRESHOLD = 0.02
 
 ACTION = {
-    "missing_image": "bo sung lai anh goc va gan lai nhan",
-    "invalid_class": "gan lai class_id (ngoai 0-79)",
-    "bbox_out_of_bounds": "ve lai box tran khoi anh",
-    "duplicate_box": "xoa box lap va kiem tra lai",
-    "class_swap": "gan lai lop cua box detection",
-    "bbox_drift": "ve lai box lech khoi vat",
-    "missing_box": "bo sung box con thieu",
-    "wrong_hash": "anh hong, tai lai anh va gan lai",
+    "missing_image": "bổ sung lại ảnh gốc và gán lại nhãn",
+    "invalid_class": "gán lại class_id (ngoài 0-79)",
+    "bbox_out_of_bounds": "vẽ lại box tràn khỏi ảnh",
+    "duplicate_box": "xóa box lặp và kiểm tra lại",
+    "class_swap": "gán lại lớp của box detection",
+    "bbox_drift": "vẽ lại box lệch khỏi vật",
+    "missing_box": "bổ sung box còn thiếu",
+    "wrong_hash": "ảnh hỏng, tải lại ảnh và gán lại",
 }
 
 
@@ -199,21 +199,21 @@ def main() -> int:
     n_err = len({e["target"] for e in errors})
     rate = n_err / len(man)
     v1 = "Hold" if rate > THRESHOLD else "Release"
-    reason = f"{rate:.1%} {'>' if rate > THRESHOLD else '<='} nguong 2% (Day 7)"
+    reason = f"{rate:.1%} {'>' if rate > THRESHOLD else '<='} ngưỡng 2% (Day 7)"
     notes = []
     if hash_fixed:
-        notes.append(f"wrong_hash {len(hash_fixed)} anh ({', '.join(hash_fixed)}): da mo anh kiem, anh nguyen ven, chi manifest sai nen ghi hash dung")
+        notes.append(f"wrong_hash {len(hash_fixed)} ảnh ({', '.join(hash_fixed)}): đã mở ảnh kiểm, ảnh nguyên vẹn, chỉ manifest ghi sai nên ghi hash đúng")
     if hash_damaged:
-        notes.append(f"wrong_hash {len(hash_damaged)} anh hong ({', '.join(hash_damaged)}) dua vao rework")
+        notes.append(f"wrong_hash {len(hash_damaged)} ảnh hỏng ({', '.join(hash_damaged)}) đưa vào rework")
     if leak_scenes:
-        notes.append(f"scene_leak {len(leak_scenes)} canh ({', '.join(sorted(leak_scenes))}) da dua ca canh ve mot split (theo da so)")
+        notes.append(f"scene_leak {len(leak_scenes)} cảnh ({', '.join(sorted(leak_scenes))}) đã đưa cả cảnh về một split (theo đa số)")
     if guideline_fixed:
-        notes.append(f"guideline_mismatch {len(guideline_fixed)} anh ({', '.join(guideline_fixed)}) lay guideline theo job trong truyvet.csv")
+        notes.append(f"guideline_mismatch {len(guideline_fixed)} ảnh ({', '.join(guideline_fixed)}) lấy guideline theo job trong truyvet.csv")
     if rework:
         owners = sorted({(r[2], r[3]) for r in rq})
-        notes.append(f"{len(rework)} anh rework giao lai cho annotator/reviewer: " + "; ".join(f"{a}/{r}" for a, r in owners))
+        notes.append(f"{len(rework)} ảnh rework giao lại cho annotator/reviewer: " + "; ".join(f"{a}/{r}" for a, r in owners))
     if panoptic_only:
-        notes.append(f"{len(panoptic_only)} anh loi chi o panoptic o lai v2, bao team panoptic: {', '.join(panoptic_only)}")
+        notes.append(f"{len(panoptic_only)} ảnh lỗi chỉ ở panoptic ở lại v2, báo team panoptic: {', '.join(panoptic_only)}")
     (v2 / "README.txt").write_text(
         f"Release: {rid}_v2\n"
         f"Parent: {rid}\n"
