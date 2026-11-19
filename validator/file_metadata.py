@@ -6,28 +6,13 @@ import hashlib
 from pathlib import Path
 from typing import Any, Iterable, Mapping
 
+try:  # Re-export the helper for compatibility with existing imports.
+    from .io_utils import resolve_delivery_path
+except ImportError:
+    from io_utils import resolve_delivery_path
+
 
 Error = dict[str, str]
-
-
-def resolve_delivery_path(delivery: Path, relative_path: object) -> Path | None:
-    """Return an existing file contained by delivery, or None.
-
-    Resolving before opening also prevents manifest paths and symlinks from
-    making the validator read a file outside the supplied delivery directory.
-    """
-
-    try:
-        root = delivery.resolve(strict=True)
-        raw_path = Path(relative_path)  # type: ignore[arg-type]
-        if raw_path.is_absolute():
-            return None
-        candidate = (root / raw_path).resolve(strict=True)
-        candidate.relative_to(root)
-    except (OSError, TypeError, ValueError):
-        return None
-
-    return candidate if candidate.is_file() else None
 
 
 def sha256_file(path: Path, chunk_size: int = 1024 * 1024) -> str:

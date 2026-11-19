@@ -9,7 +9,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from validator.file_metadata import validate_file_metadata  # noqa: E402
+from validator.file_metadata import (  # noqa: E402
+    resolve_delivery_path as compatibility_resolver,
+    validate_file_metadata,
+)
+from validator.io_utils import resolve_delivery_path  # noqa: E402
 
 
 class FileMetadataRulesTest(unittest.TestCase):
@@ -37,6 +41,9 @@ class FileMetadataRulesTest(unittest.TestCase):
 
     def findings(self):
         return list(validate_file_metadata(self.delivery, self.manifest))
+
+    def test_legacy_resolver_import_remains_compatible(self):
+        self.assertIs(compatibility_resolver, resolve_delivery_path)
 
     def test_valid_fixture_has_no_false_positive(self):
         self.assertEqual(self.findings(), [])
