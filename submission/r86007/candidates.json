@@ -1,0 +1,698 @@
+{
+  "candidates": [
+    {
+      "image": "000000000776",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "bed",
+      "pan_class": "teddy bear",
+      "iou": 0.592,
+      "pixel_coverage": 1.0,
+      "det_bbox": [
+        1.4,
+        0.1,
+        428.0,
+        640.0
+      ],
+      "pan_bbox": [
+        1,
+        58,
+        345,
+        469
+      ],
+      "segment_id": 4217973,
+      "note": "det ghi 'bed' nhưng pan ghi 'teddy bear' (IoU=0.59, cov=1.00)"
+    },
+    {
+      "image": "000000000776",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "bed",
+      "pan_class": "teddy bear",
+      "iou": 0.651,
+      "pixel_coverage": 1.0,
+      "det_bbox": [
+        1.4,
+        0.1,
+        428.0,
+        640.0
+      ],
+      "pan_bbox": [
+        100,
+        7,
+        327,
+        543
+      ],
+      "segment_id": 2707318,
+      "note": "det ghi 'bed' nhưng pan ghi 'teddy bear' (IoU=0.65, cov=1.00)"
+    },
+    {
+      "image": "000000003845",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "fork",
+      "pan_class": "spoon",
+      "iou": 0.829,
+      "pixel_coverage": 1.0,
+      "det_bbox": [
+        137.5,
+        44.2,
+        424.4,
+        93.2
+      ],
+      "pan_bbox": [
+        145,
+        46,
+        277,
+        42
+      ],
+      "segment_id": 5989755,
+      "note": "det ghi 'fork' nhưng pan ghi 'spoon' (IoU=0.83, cov=1.00)"
+    },
+    {
+      "image": "000000003845",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "spoon",
+      "pan_class": "fork",
+      "iou": 0.876,
+      "pixel_coverage": 0.956,
+      "det_bbox": [
+        144.7,
+        44.7,
+        422.6,
+        88.9
+      ],
+      "pan_bbox": [
+        138,
+        44,
+        286,
+        49
+      ],
+      "segment_id": 6780294,
+      "note": "det ghi 'spoon' nhưng pan ghi 'fork' (IoU=0.88, cov=0.96)"
+    },
+    {
+      "image": "000000009590",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "cup",
+      "pan_class": "bowl",
+      "iou": 0.92,
+      "pixel_coverage": 1.0,
+      "det_bbox": [
+        423.4,
+        275.0,
+        471.7,
+        305.9
+      ],
+      "pan_bbox": [
+        424,
+        276,
+        46,
+        30
+      ],
+      "segment_id": 5066309,
+      "note": "det ghi 'cup' nhưng pan ghi 'bowl' (IoU=0.92, cov=1.00)"
+    },
+    {
+      "image": "000000009914",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "hot dog",
+      "pan_class": "sandwich",
+      "iou": 0.815,
+      "pixel_coverage": 0.97,
+      "det_bbox": [
+        518.7,
+        185.6,
+        640.0,
+        464.4
+      ],
+      "pan_bbox": [
+        529,
+        163,
+        108,
+        308
+      ],
+      "segment_id": 4220302,
+      "note": "det ghi 'hot dog' nhưng pan ghi 'sandwich' (IoU=0.81, cov=0.97)"
+    },
+    {
+      "image": "000000010092",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "chair",
+      "pan_class": "dining table",
+      "iou": 0.602,
+      "pixel_coverage": 0.97,
+      "det_bbox": [
+        538.2,
+        204.7,
+        640.0,
+        406.8
+      ],
+      "pan_bbox": [
+        546,
+        264,
+        94,
+        161
+      ],
+      "segment_id": 3294847,
+      "note": "det ghi 'chair' nhưng pan ghi 'dining table' (IoU=0.60, cov=0.97)"
+    },
+    {
+      "image": "000000013597",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "dining table",
+      "pan_class": "cake",
+      "iou": 0.669,
+      "pixel_coverage": 1.0,
+      "det_bbox": [
+        0.0,
+        0.0,
+        639.9,
+        420.2
+      ],
+      "pan_bbox": [
+        70,
+        30,
+        461,
+        390
+      ],
+      "segment_id": 2968173,
+      "note": "det ghi 'dining table' nhưng pan ghi 'cake' (IoU=0.67, cov=1.00)"
+    },
+    {
+      "image": "000000015440",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "bus",
+      "pan_class": "truck",
+      "iou": 0.969,
+      "pixel_coverage": 1.0,
+      "det_bbox": [
+        113.6,
+        191.9,
+        144.7,
+        253.5
+      ],
+      "pan_bbox": [
+        114,
+        192,
+        31,
+        62
+      ],
+      "segment_id": 5982094,
+      "note": "det ghi 'bus' nhưng pan ghi 'truck' (IoU=0.97, cov=1.00)"
+    },
+    {
+      "image": "000000015497",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "couch",
+      "pan_class": "cat",
+      "iou": 0.64,
+      "pixel_coverage": 1.0,
+      "det_bbox": [
+        0.1,
+        1.3,
+        640.0,
+        480.0
+      ],
+      "pan_bbox": [
+        32,
+        20,
+        452,
+        434
+      ],
+      "segment_id": 5001057,
+      "note": "det ghi 'couch' nhưng pan ghi 'cat' (IoU=0.64, cov=1.00)"
+    },
+    {
+      "image": "000000016249",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "person",
+      "pan_class": "bench",
+      "iou": 0.529,
+      "pixel_coverage": 0.973,
+      "det_bbox": [
+        42.7,
+        116.7,
+        190.3,
+        350.0
+      ],
+      "pan_bbox": [
+        29,
+        201,
+        144,
+        148
+      ],
+      "segment_id": 2236956,
+      "note": "det ghi 'person' nhưng pan ghi 'bench' (IoU=0.53, cov=0.97)"
+    },
+    {
+      "image": "000000016451",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "handbag",
+      "pan_class": "backpack",
+      "iou": 0.597,
+      "pixel_coverage": 0.994,
+      "det_bbox": [
+        495.9,
+        453.6,
+        580.8,
+        550.1
+      ],
+      "pan_bbox": [
+        495,
+        452,
+        85,
+        61
+      ],
+      "segment_id": 3741764,
+      "note": "det ghi 'handbag' nhưng pan ghi 'backpack' (IoU=0.60, cov=0.99)"
+    },
+    {
+      "image": "000000018193",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "chair",
+      "pan_class": "person",
+      "iou": 0.569,
+      "pixel_coverage": 0.862,
+      "det_bbox": [
+        28.0,
+        123.0,
+        396.9,
+        470.3
+      ],
+      "pan_bbox": [
+        88,
+        45,
+        393,
+        427
+      ],
+      "segment_id": 7898505,
+      "note": "det ghi 'chair' nhưng pan ghi 'person' (IoU=0.57, cov=0.86)"
+    },
+    {
+      "image": "000000018193",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "person",
+      "pan_class": "chair",
+      "iou": 0.573,
+      "pixel_coverage": 0.638,
+      "det_bbox": [
+        85.2,
+        45.3,
+        481.1,
+        472.5
+      ],
+      "pan_bbox": [
+        28,
+        123,
+        369,
+        347
+      ],
+      "segment_id": 2892574,
+      "note": "det ghi 'person' nhưng pan ghi 'chair' (IoU=0.57, cov=0.64)"
+    },
+    {
+      "image": "000000019402",
+      "type": "bbox_drift",
+      "det_class": "person",
+      "pan_class": "person",
+      "iou": 0.501,
+      "pixel_coverage": 0.578,
+      "drift_metric": 0.292,
+      "det_bbox": [
+        197.0,
+        39.6,
+        516.0,
+        440.8
+      ],
+      "pan_bbox": [
+        261,
+        1,
+        377,
+        474
+      ],
+      "segment_id": 4948109,
+      "note": "box 'person' lệch khỏi mask (IoU=0.50, cov=0.58, lệch tâm=0.29)"
+    },
+    {
+      "image": "000000022705",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "refrigerator",
+      "pan_class": "person",
+      "iou": 0.73,
+      "pixel_coverage": 0.936,
+      "det_bbox": [
+        117.6,
+        140.9,
+        373.6,
+        640.0
+      ],
+      "pan_bbox": [
+        144,
+        83,
+        219,
+        526
+      ],
+      "segment_id": 3356741,
+      "note": "det ghi 'refrigerator' nhưng pan ghi 'person' (IoU=0.73, cov=0.94)"
+    },
+    {
+      "image": "000000022705",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "person",
+      "pan_class": "refrigerator",
+      "iou": 0.718,
+      "pixel_coverage": 0.726,
+      "det_bbox": [
+        143.5,
+        83.4,
+        363.1,
+        608.6
+      ],
+      "pan_bbox": [
+        137,
+        48,
+        256,
+        497
+      ],
+      "segment_id": 6448229,
+      "note": "det ghi 'person' nhưng pan ghi 'refrigerator' (IoU=0.72, cov=0.73)"
+    },
+    {
+      "image": "000000022705",
+      "type": "bbox_drift",
+      "det_class": "refrigerator",
+      "pan_class": "refrigerator",
+      "iou": 0.6,
+      "pixel_coverage": 0.685,
+      "drift_metric": 0.203,
+      "det_bbox": [
+        117.6,
+        140.9,
+        373.6,
+        640.0
+      ],
+      "pan_bbox": [
+        137,
+        48,
+        256,
+        497
+      ],
+      "segment_id": 6448229,
+      "note": "box 'refrigerator' lệch khỏi mask (IoU=0.60, cov=0.69, lệch tâm=0.20)"
+    },
+    {
+      "image": "000000022892",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "cat",
+      "pan_class": "chair",
+      "iou": 0.648,
+      "pixel_coverage": 0.849,
+      "det_bbox": [
+        237.8,
+        23.5,
+        499.2,
+        254.0
+      ],
+      "pan_bbox": [
+        314,
+        0,
+        186,
+        260
+      ],
+      "segment_id": 4412792,
+      "note": "det ghi 'cat' nhưng pan ghi 'chair' (IoU=0.65, cov=0.85)"
+    },
+    {
+      "image": "000000022892",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "chair",
+      "pan_class": "cat",
+      "iou": 0.649,
+      "pixel_coverage": 0.862,
+      "det_bbox": [
+        314.1,
+        0.0,
+        500.0,
+        259.6
+      ],
+      "pan_bbox": [
+        238,
+        23,
+        261,
+        231
+      ],
+      "segment_id": 7562331,
+      "note": "det ghi 'chair' nhưng pan ghi 'cat' (IoU=0.65, cov=0.86)"
+    },
+    {
+      "image": "000000022935",
+      "type": "bbox_drift",
+      "det_class": "person",
+      "pan_class": "person",
+      "iou": 0.709,
+      "pixel_coverage": 0.61,
+      "drift_metric": 0.203,
+      "det_bbox": [
+        20.4,
+        18.4,
+        457.4,
+        473.7
+      ],
+      "pan_bbox": [
+        21,
+        18,
+        613,
+        457
+      ],
+      "segment_id": 9984846,
+      "note": "box 'person' lệch khỏi mask (IoU=0.71, cov=0.61, lệch tâm=0.20)"
+    },
+    {
+      "image": "000000023937",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "sheep",
+      "pan_class": "cow",
+      "iou": 0.569,
+      "pixel_coverage": 0.993,
+      "det_bbox": [
+        396.4,
+        182.1,
+        504.9,
+        258.3
+      ],
+      "pan_bbox": [
+        395,
+        190,
+        109,
+        44
+      ],
+      "segment_id": 10140350,
+      "note": "det ghi 'sheep' nhưng pan ghi 'cow' (IoU=0.57, cov=0.99)"
+    },
+    {
+      "image": "000000023937",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "cow",
+      "pan_class": "sheep",
+      "iou": 0.571,
+      "pixel_coverage": 0.771,
+      "det_bbox": [
+        395.1,
+        190.0,
+        503.9,
+        234.1
+      ],
+      "pan_bbox": [
+        396,
+        182,
+        109,
+        76
+      ],
+      "segment_id": 5934470,
+      "note": "det ghi 'cow' nhưng pan ghi 'sheep' (IoU=0.57, cov=0.77)"
+    },
+    {
+      "image": "000000024021",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "spoon",
+      "pan_class": "person",
+      "iou": 0.948,
+      "pixel_coverage": 1.0,
+      "det_bbox": [
+        455.0,
+        237.3,
+        521.0,
+        338.5
+      ],
+      "pan_bbox": [
+        458,
+        237,
+        63,
+        101
+      ],
+      "segment_id": 3947580,
+      "note": "det ghi 'spoon' nhưng pan ghi 'person' (IoU=0.95, cov=1.00)"
+    },
+    {
+      "image": "000000025393",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "fire hydrant",
+      "pan_class": "person",
+      "iou": 0.996,
+      "pixel_coverage": 0.999,
+      "det_bbox": [
+        371.2,
+        136.2,
+        494.9,
+        478.3
+      ],
+      "pan_bbox": [
+        371,
+        136,
+        124,
+        342
+      ],
+      "segment_id": 3288378,
+      "note": "det ghi 'fire hydrant' nhưng pan ghi 'person' (IoU=1.00, cov=1.00)"
+    },
+    {
+      "image": "000000004395",
+      "type": "missing_box",
+      "det_class": null,
+      "pan_class": "person",
+      "iou": 0.127,
+      "pixel_coverage": 0.069,
+      "det_bbox": null,
+      "pan_bbox": [
+        1,
+        1,
+        424,
+        638
+      ],
+      "segment_id": 9215908,
+      "note": "segment 'person' lớn (area=174729px) nhưng thiếu box (max_cov=0.07)"
+    },
+    {
+      "image": "000000022935",
+      "type": "instance_merge",
+      "det_class": "person",
+      "pan_class": "person",
+      "iou": 0.709,
+      "pixel_coverage": 1.056,
+      "det_bbox": [
+        20.4,
+        18.4,
+        457.4,
+        473.7
+      ],
+      "det_bboxes": [
+        [
+          20.4,
+          18.4,
+          457.4,
+          473.7
+        ],
+        [
+          422.8,
+          25.9,
+          634.3,
+          474.6
+        ]
+      ],
+      "pan_bbox": [
+        21,
+        18,
+        613,
+        457
+      ],
+      "segment_id": 9984846,
+      "note": "1 segment 'person' phủ 2 box cùng lớp (cov=[0.61, 0.45])"
+    }
+  ]
+}
