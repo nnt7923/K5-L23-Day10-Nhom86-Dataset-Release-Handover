@@ -1,4 +1,4 @@
 image,type,verdict,note
-000000009590,class_swap,,
-000000016451,class_swap,,
-000000024021,class_swap,,
+000000009590,class_swap,rejected,"Chén trà xanh nhỏ không quai trên bàn tiệc, COCO gắn đồng thời cả cup và bowl, độ lệch tự nhiên giữa hai nguồn"
+000000016451,class_swap,rejected,"Chiếc túi giữ nhiệt màu đỏ duy nhất trên cát, detection gán handbag còn panoptic dán backpack nửa trên; bất đồng nhãn tự nhiên của COCO trên cùng 1 vật"
+000000024021,class_swap,confirmed,"Ảnh chụp tập thể đông người năm 1929 gồm thầy giáo và học sinh, có đúng 1 người (person) trong đám đông bị nhãn detection dán nhầm thành thìa (spoon)"

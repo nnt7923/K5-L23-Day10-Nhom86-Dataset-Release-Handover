@@ -1,4 +1,5 @@
 image,type,verdict,note
-000000003845,class_swap,,
-000000015497,class_swap,,
-000000022935,bbox_drift,,
+000000003845,class_swap,rejected,"Hai dụng cụ ăn nằm chồng lấn nhưng là hai vật thể riêng biệt. Nhãn dĩa và thìa không bị tráo; thuật toán đối chiếu nhầm hai đối tượng."
+000000015497,class_swap,rejected,"Detection đánh dấu ghế sofa, còn panoptic phân vùng đúng con mèo đang nằm trên ghế. Đây là sự chồng lấn tự nhiên giữa hai vật thể, không phải lỗi tráo nhãn."
+000000022935,bbox_drift,rejected,"Bounding box detection bao đúng cầu thủ áo xanh phía trước. Sự khác biệt xuất phát từ việc panoptic gộp hai người vào cùng một segment, không phải box bị lệch."
+000000022935,instance_merge,confirmed,"Một segment person của panoptic bao phủ cả cầu thủ áo xanh phía trước và cầu thủ áo vàng phía sau, trong khi detection có hai bounding box riêng biệt."

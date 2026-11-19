@@ -1,3 +1,4 @@
 image,type,verdict,note
-000000013597,class_swap,,
-000000022705,class_swap,,
+000000013597,class_swap,rejected,"Ảnh cận cảnh miếng bánh kem trên đĩa. Detection đã có box cake riêng khớp đúng miếng bánh (gần trùng bbox panoptic cake). Box dining table phủ cả khung hình là bàn bên dưới đĩa, bị ghép nhầm với segment cake; không phải đổi lớp, là lệch tự nhiên"
+000000022705,class_swap,rejected,"Cô gái váy đen cầm ly rượu đứng trước tủ lạnh inox. Box person của detection trùng gần như tuyệt đối với mask person, lớp đúng. Hai cặp swap là do ghép chéo nhầm với box refrigerator bị lệch, không có nhãn nào bị đổi lớp"
+000000022705,bbox_drift,confirmed,"Box refrigerator cùng kích thước với tủ lạnh (khoảng 256x499) nhưng bị dịch xuống khoảng 93px và sang trái khoảng 19px: cạnh trên nằm ngang ngực cô gái, cạnh dưới tràn xuống sàn gạch, trong khi nóc tủ lạnh ở ngang tủ bếp phía trên"
