@@ -26,13 +26,15 @@ from cross_check import (  # noqa: E402
 )
 
 
+# Cập nhật chữ ký hàm find_missing_and_merge_candidates:
 def find_missing_and_merge_candidates(
     delivery_dir: Path,
-    min_area_px: int = 1200,          # Diện tích tối thiểu của segment để xét missing_box
-    min_area_rel: float = 0.005,      # Tỉ lệ diện tích tối thiểu so với toàn ảnh (0.5%)
-    max_cover_missing: float = 0.25,  # Độ phủ box cao nhất < 25% -> nghi ngờ missing_box
-    min_merge_cov: float = 0.20,      # Mỗi box phải chứa >= 20% pixel của segment
-    min_merge_fill: float = 0.25,     # Pixel segment phải chiếm >= 25% diện tích mỗi box
+    min_area_px: int = 1200,
+    min_area_rel: float = 0.005,
+    max_cover_missing: float = 0.25,
+    min_merge_cov: float = 0.20,
+    max_merge_cov: float = 0.88,      # Thêm ngưỡng trần: 1 box ôm >= 88% segment thì không phải lỗi gộp
+    min_merge_fill: float = 0.25,
 ) -> list[dict]:
     """Tìm ứng viên missing_box và instance_merge."""
     delivery_dir = Path(delivery_dir)
@@ -156,14 +158,12 @@ def find_missing_and_merge_candidates(
 
                 # Loại trường hợp 2 box trùng nhau (duplicate_box)
                 if len(matched_boxes) >= 2:
-                    valid_pair = False
-                    for idx1 in range(len(matched_boxes)):
-                        for idx2 in range(idx1 + 1, len(matched_boxes)):
-                            if bbox_iou(matched_boxes[idx1][0]["bbox"], matched_boxes[idx2][0]["bbox"]) < 0.70:
-                                valid_pair = True
-                                break
-                        if valid_pair:
-                            break
+                    max_single_cov = max(c for _, c in matched_boxes)
+                    valid_pair = max_single_cov < max_merge_cov and any(
+                        bbox_iou(matched_boxes[i][0]["bbox"], matched_boxes[j][0]["bbox"]) < 0.70
+                        for i in range(len(matched_boxes))
+                        for j in range(i + 1, len(matched_boxes))
+                    )
 
                     if valid_pair:
                         cov_str = ", ".join(f"{c:.2f}" for _, c in matched_boxes)
