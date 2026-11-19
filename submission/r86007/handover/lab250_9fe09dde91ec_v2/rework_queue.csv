@@ -1,0 +1,14 @@
+image,type,annotator,reviewer,action
+000000004395,missing_box,A04,Q03,bổ sung box còn thiếu
+000000009448,duplicate_box,A03,Q02,xóa box lặp và kiểm tra lại
+000000009483,invalid_class,A03,Q02,gán lại class_id (ngoài 0-79)
+000000009914,class_swap,A05,Q03,gán lại lớp của box detection
+000000011760,bbox_out_of_bounds,A05,Q03,vẽ lại box tràn khỏi ảnh
+000000012639,bbox_out_of_bounds,A05,Q03,vẽ lại box tràn khỏi ảnh
+000000013177,duplicate_box,A05,Q03,xóa box lặp và kiểm tra lại
+000000014380,invalid_class,A05,Q03,gán lại class_id (ngoài 0-79)
+000000015440,class_swap,A05,Q01,gán lại lớp của box detection
+000000019402,bbox_drift,A03,Q01,vẽ lại box lệch khỏi vật
+000000022705,bbox_drift,A05,Q03,vẽ lại box lệch khỏi vật
+000000024021,class_swap,A01,Q03,gán lại lớp của box detection
+000000025393,class_swap,A01,Q03,gán lại lớp của box detection

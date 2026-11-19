@@ -1,3 +1,4 @@
 {"event": "inject", "release_id": "lab250_9fe09dde91ec", "seed": 86007, "detail": "r86007"}
 {"event": "train", "release_id": "lab250_9fe09dde91ec", "run_id": "R-021"}
 {"event": "decision", "release_id": "lab250_9fe09dde91ec", "decision": "HOLD"}
+{"event": "release", "release_id": "lab250_9fe09dde91ec_v2", "parent": "lab250_9fe09dde91ec"}
