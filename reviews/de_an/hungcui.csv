@@ -1,5 +1,5 @@
 image,type,verdict,note
-img_0036,class_swap,,
-img_0082,class_swap,,
-img_0146,class_swap,,
-img_0226,class_swap,,
+img_0036,class_swap,confirmed,"Ghế sofa trong phòng khách có người chơi game, detection dán nhầm thành bed trong khi panoptic ghi đúng couch"
+img_0082,class_swap,rejected,"Người đàn ông nằm trên ghế sofa da đen dùng laptop; hai vật thể riêng biệt person và couch chồng lấn tự nhiên, nhãn cả hai bên đều đúng"
+img_0146,category_swap,confirmed,"Xe bán tải màu xanh lá có thùng xe rõ ràng, detection ghi truck là đúng còn panoptic dán nhầm thành car (category_swap)"
+img_0226,class_swap,rejected,"Va li kéo màu đen có bánh xe nằm trên sân ga đã có box suitcase đúng, box backpack bị dán đè là bất đồng nhãn tự nhiên của COCO, không phải tráo nhãn"
