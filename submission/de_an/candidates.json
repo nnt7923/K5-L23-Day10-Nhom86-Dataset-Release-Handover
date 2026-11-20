@@ -1,0 +1,825 @@
+{
+  "candidates": [
+    {
+      "image": "img_0004",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "motorcycle",
+      "pan_class": "person",
+      "iou": 0.529,
+      "pixel_coverage": 0.64,
+      "det_bbox": [
+        178.2,
+        262.7,
+        350.6,
+        510.4
+      ],
+      "pan_bbox": [
+        189,
+        174,
+        174,
+        287
+      ],
+      "segment_id": 5090593,
+      "note": "det ghi 'motorcycle' nhưng pan ghi 'person' (IoU=0.53, cov=0.64)"
+    },
+    {
+      "image": "img_0004",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "person",
+      "pan_class": "motorcycle",
+      "iou": 0.528,
+      "pixel_coverage": 0.853,
+      "det_bbox": [
+        188.7,
+        173.9,
+        363.7,
+        460.7
+      ],
+      "pan_bbox": [
+        178,
+        263,
+        173,
+        247
+      ],
+      "segment_id": 3063700,
+      "note": "det ghi 'person' nhưng pan ghi 'motorcycle' (IoU=0.53, cov=0.85)"
+    },
+    {
+      "image": "img_0006",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "bus",
+      "pan_class": "truck",
+      "iou": 0.904,
+      "pixel_coverage": 0.989,
+      "det_bbox": [
+        138.5,
+        355.8,
+        175.9,
+        439.0
+      ],
+      "pan_bbox": [
+        137,
+        358,
+        38,
+        82
+      ],
+      "segment_id": 9071124,
+      "note": "det ghi 'bus' nhưng pan ghi 'truck' (IoU=0.90, cov=0.99)"
+    },
+    {
+      "image": "img_0028",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "bicycle",
+      "pan_class": "motorcycle",
+      "iou": 0.996,
+      "pixel_coverage": 1.0,
+      "det_bbox": [
+        0.0,
+        2.1,
+        334.6,
+        418.9
+      ],
+      "pan_bbox": [
+        0,
+        2,
+        334,
+        416
+      ],
+      "segment_id": 4740142,
+      "note": "det ghi 'bicycle' nhưng pan ghi 'motorcycle' (IoU=1.00, cov=1.00)"
+    },
+    {
+      "image": "img_0036",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "bed",
+      "pan_class": "couch",
+      "iou": 0.933,
+      "pixel_coverage": 1.0,
+      "det_bbox": [
+        0.0,
+        347.8,
+        118.5,
+        480.0
+      ],
+      "pan_bbox": [
+        5,
+        346,
+        112,
+        134
+      ],
+      "segment_id": 15816775,
+      "note": "det ghi 'bed' nhưng pan ghi 'couch' (IoU=0.93, cov=1.00)"
+    },
+    {
+      "image": "img_0045",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "handbag",
+      "pan_class": "backpack",
+      "iou": 0.878,
+      "pixel_coverage": 1.0,
+      "det_bbox": [
+        315.4,
+        186.1,
+        421.0,
+        287.3
+      ],
+      "pan_bbox": [
+        319,
+        194,
+        102,
+        92
+      ],
+      "segment_id": 8611501,
+      "note": "det ghi 'handbag' nhưng pan ghi 'backpack' (IoU=0.88, cov=1.00)"
+    },
+    {
+      "image": "img_0054",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "hot dog",
+      "pan_class": "sandwich",
+      "iou": 0.727,
+      "pixel_coverage": 0.913,
+      "det_bbox": [
+        367.2,
+        188.2,
+        501.4,
+        334.3
+      ],
+      "pan_bbox": [
+        352,
+        212,
+        146,
+        126
+      ],
+      "segment_id": 15589425,
+      "note": "det ghi 'hot dog' nhưng pan ghi 'sandwich' (IoU=0.73, cov=0.91)"
+    },
+    {
+      "image": "img_0054",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "sandwich",
+      "pan_class": "hot dog",
+      "iou": 0.73,
+      "pixel_coverage": 0.928,
+      "det_bbox": [
+        352.1,
+        211.9,
+        497.9,
+        338.4
+      ],
+      "pan_bbox": [
+        367,
+        189,
+        134,
+        145
+      ],
+      "segment_id": 10118264,
+      "note": "det ghi 'sandwich' nhưng pan ghi 'hot dog' (IoU=0.73, cov=0.93)"
+    },
+    {
+      "image": "img_0057",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "chair",
+      "pan_class": "person",
+      "iou": 0.608,
+      "pixel_coverage": 0.932,
+      "det_bbox": [
+        347.5,
+        305.6,
+        425.1,
+        366.9
+      ],
+      "pan_bbox": [
+        355,
+        299,
+        51,
+        69
+      ],
+      "segment_id": 13096387,
+      "note": "det ghi 'chair' nhưng pan ghi 'person' (IoU=0.61, cov=0.93)"
+    },
+    {
+      "image": "img_0061",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "cake",
+      "pan_class": "donut",
+      "iou": 0.992,
+      "pixel_coverage": 1.0,
+      "det_bbox": [
+        536.2,
+        95.4,
+        640.0,
+        216.7
+      ],
+      "pan_bbox": [
+        536,
+        95,
+        104,
+        122
+      ],
+      "segment_id": 15218723,
+      "note": "det ghi 'cake' nhưng pan ghi 'donut' (IoU=0.99, cov=1.00)"
+    },
+    {
+      "image": "img_0062",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "truck",
+      "pan_class": "car",
+      "iou": 0.946,
+      "pixel_coverage": 0.979,
+      "det_bbox": [
+        0.9,
+        336.8,
+        63.3,
+        381.9
+      ],
+      "pan_bbox": [
+        0,
+        336,
+        62,
+        46
+      ],
+      "segment_id": 11750041,
+      "note": "det ghi 'truck' nhưng pan ghi 'car' (IoU=0.95, cov=0.98)"
+    },
+    {
+      "image": "img_0082",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "couch",
+      "pan_class": "person",
+      "iou": 0.626,
+      "pixel_coverage": 0.873,
+      "det_bbox": [
+        1.0,
+        164.8,
+        638.2,
+        421.9
+      ],
+      "pan_bbox": [
+        60,
+        82,
+        507,
+        337
+      ],
+      "segment_id": 11587378,
+      "note": "det ghi 'couch' nhưng pan ghi 'person' (IoU=0.63, cov=0.87)"
+    },
+    {
+      "image": "img_0082",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "person",
+      "pan_class": "couch",
+      "iou": 0.627,
+      "pixel_coverage": 0.656,
+      "det_bbox": [
+        59.9,
+        82.3,
+        567.2,
+        419.3
+      ],
+      "pan_bbox": [
+        1,
+        165,
+        637,
+        257
+      ],
+      "segment_id": 15296640,
+      "note": "det ghi 'person' nhưng pan ghi 'couch' (IoU=0.63, cov=0.66)"
+    },
+    {
+      "image": "img_0086",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "chair",
+      "pan_class": "dining table",
+      "iou": 0.896,
+      "pixel_coverage": 1.0,
+      "det_bbox": [
+        485.3,
+        0.0,
+        639.0,
+        131.8
+      ],
+      "pan_bbox": [
+        485,
+        1,
+        155,
+        119
+      ],
+      "segment_id": 7296615,
+      "note": "det ghi 'chair' nhưng pan ghi 'dining table' (IoU=0.90, cov=1.00)"
+    },
+    {
+      "image": "img_0113",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "person",
+      "pan_class": "motorcycle",
+      "iou": 0.548,
+      "pixel_coverage": 0.884,
+      "det_bbox": [
+        543.1,
+        145.1,
+        635.6,
+        350.8
+      ],
+      "pan_bbox": [
+        550,
+        203,
+        90,
+        186
+      ],
+      "segment_id": 15435995,
+      "note": "det ghi 'person' nhưng pan ghi 'motorcycle' (IoU=0.55, cov=0.88)"
+    },
+    {
+      "image": "img_0115",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "cup",
+      "pan_class": "bowl",
+      "iou": 0.969,
+      "pixel_coverage": 1.0,
+      "det_bbox": [
+        171.7,
+        242.9,
+        281.6,
+        336.0
+      ],
+      "pan_bbox": [
+        172,
+        243,
+        109,
+        91
+      ],
+      "segment_id": 13806135,
+      "note": "det ghi 'cup' nhưng pan ghi 'bowl' (IoU=0.97, cov=1.00)"
+    },
+    {
+      "image": "img_0120",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "backpack",
+      "pan_class": "handbag",
+      "iou": 0.924,
+      "pixel_coverage": 1.0,
+      "det_bbox": [
+        291.4,
+        360.1,
+        368.8,
+        414.2
+      ],
+      "pan_bbox": [
+        291,
+        362,
+        76,
+        53
+      ],
+      "segment_id": 15038991,
+      "note": "det ghi 'backpack' nhưng pan ghi 'handbag' (IoU=0.92, cov=1.00)"
+    },
+    {
+      "image": "img_0129",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "bowl",
+      "pan_class": "dining table",
+      "iou": 0.933,
+      "pixel_coverage": 0.805,
+      "det_bbox": [
+        16.1,
+        0.1,
+        619.6,
+        473.7
+      ],
+      "pan_bbox": [
+        2,
+        0,
+        638,
+        480
+      ],
+      "segment_id": 11532488,
+      "note": "det ghi 'bowl' nhưng pan ghi 'dining table' (IoU=0.93, cov=0.81)"
+    },
+    {
+      "image": "img_0129",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "dining table",
+      "pan_class": "bowl",
+      "iou": 0.908,
+      "pixel_coverage": 1.0,
+      "det_bbox": [
+        2.2,
+        0.1,
+        640.0,
+        480.0
+      ],
+      "pan_bbox": [
+        23,
+        0,
+        589,
+        472
+      ],
+      "segment_id": 8109918,
+      "note": "det ghi 'dining table' nhưng pan ghi 'bowl' (IoU=0.91, cov=1.00)"
+    },
+    {
+      "image": "img_0145",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "couch",
+      "pan_class": "chair",
+      "iou": 0.971,
+      "pixel_coverage": 1.0,
+      "det_bbox": [
+        343.8,
+        173.5,
+        497.2,
+        269.2
+      ],
+      "pan_bbox": [
+        345,
+        174,
+        150,
+        95
+      ],
+      "segment_id": 7154377,
+      "note": "det ghi 'couch' nhưng pan ghi 'chair' (IoU=0.97, cov=1.00)"
+    },
+    {
+      "image": "img_0146",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "truck",
+      "pan_class": "car",
+      "iou": 0.967,
+      "pixel_coverage": 0.994,
+      "det_bbox": [
+        293.0,
+        77.7,
+        478.6,
+        211.4
+      ],
+      "pan_bbox": [
+        295,
+        76,
+        185,
+        135
+      ],
+      "segment_id": 6526196,
+      "note": "det ghi 'truck' nhưng pan ghi 'car' (IoU=0.97, cov=0.99)"
+    },
+    {
+      "image": "img_0166",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "dining table",
+      "pan_class": "pizza",
+      "iou": 0.682,
+      "pixel_coverage": 0.996,
+      "det_bbox": [
+        1.4,
+        157.7,
+        636.7,
+        454.2
+      ],
+      "pan_bbox": [
+        20,
+        200,
+        515,
+        261
+      ],
+      "segment_id": 4317368,
+      "note": "det ghi 'dining table' nhưng pan ghi 'pizza' (IoU=0.68, cov=1.00)"
+    },
+    {
+      "image": "img_0169",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "bus",
+      "pan_class": "truck",
+      "iou": 0.824,
+      "pixel_coverage": 1.0,
+      "det_bbox": [
+        0.0,
+        84.1,
+        162.2,
+        305.5
+      ],
+      "pan_bbox": [
+        0,
+        118,
+        160,
+        185
+      ],
+      "segment_id": 191441,
+      "note": "det ghi 'bus' nhưng pan ghi 'truck' (IoU=0.82, cov=1.00)"
+    },
+    {
+      "image": "img_0178",
+      "type": "bbox_drift",
+      "det_class": "car",
+      "pan_class": "car",
+      "iou": 0.613,
+      "pixel_coverage": 0.841,
+      "drift_metric": 0.175,
+      "det_bbox": [
+        494.8,
+        145.8,
+        620.1,
+        208.9
+      ],
+      "pan_bbox": [
+        482,
+        142,
+        115,
+        58
+      ],
+      "segment_id": 642217,
+      "note": "box 'car' lệch khỏi mask (IoU=0.61, cov=0.84, lệch tâm=0.18)"
+    },
+    {
+      "image": "img_0188",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "dining table",
+      "pan_class": "bowl",
+      "iou": 0.751,
+      "pixel_coverage": 1.0,
+      "det_bbox": [
+        0.0,
+        2.7,
+        640.0,
+        473.0
+      ],
+      "pan_bbox": [
+        0,
+        97,
+        640,
+        353
+      ],
+      "segment_id": 9345109,
+      "note": "det ghi 'dining table' nhưng pan ghi 'bowl' (IoU=0.75, cov=1.00)"
+    },
+    {
+      "image": "img_0224",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "bowl",
+      "pan_class": "sandwich",
+      "iou": 0.578,
+      "pixel_coverage": 0.868,
+      "det_bbox": [
+        40.3,
+        239.4,
+        322.0,
+        350.8
+      ],
+      "pan_bbox": [
+        26,
+        220,
+        257,
+        109
+      ],
+      "segment_id": 10024353,
+      "note": "det ghi 'bowl' nhưng pan ghi 'sandwich' (IoU=0.58, cov=0.87)"
+    },
+    {
+      "image": "img_0226",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "backpack",
+      "pan_class": "suitcase",
+      "iou": 0.916,
+      "pixel_coverage": 0.99,
+      "det_bbox": [
+        352.1,
+        253.1,
+        406.3,
+        294.3
+      ],
+      "pan_bbox": [
+        350,
+        254,
+        57,
+        41
+      ],
+      "segment_id": 14980545,
+      "note": "det ghi 'backpack' nhưng pan ghi 'suitcase' (IoU=0.92, cov=0.99)"
+    },
+    {
+      "image": "img_0238",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "bench",
+      "pan_class": "chair",
+      "iou": 0.972,
+      "pixel_coverage": 0.998,
+      "det_bbox": [
+        47.6,
+        69.4,
+        92.7,
+        123.4
+      ],
+      "pan_bbox": [
+        48,
+        69,
+        45,
+        54
+      ],
+      "segment_id": 9343047,
+      "note": "det ghi 'bench' nhưng pan ghi 'chair' (IoU=0.97, cov=1.00)"
+    },
+    {
+      "image": "img_0238",
+      "type": "class_swap",
+      "possible_types": [
+        "class_swap",
+        "category_swap"
+      ],
+      "det_class": "couch",
+      "pan_class": "chair",
+      "iou": 0.689,
+      "pixel_coverage": 0.994,
+      "det_bbox": [
+        241.2,
+        58.6,
+        295.2,
+        109.5
+      ],
+      "pan_bbox": [
+        253,
+        60,
+        45,
+        47
+      ],
+      "segment_id": 12160126,
+      "note": "det ghi 'couch' nhưng pan ghi 'chair' (IoU=0.69, cov=0.99)"
+    },
+    {
+      "image": "img_0079",
+      "type": "missing_box",
+      "det_class": null,
+      "pan_class": "cat",
+      "iou": 0.236,
+      "pixel_coverage": 0.157,
+      "det_bbox": null,
+      "pan_bbox": [
+        161,
+        156,
+        375,
+        219
+      ],
+      "segment_id": 15473703,
+      "note": "segment 'cat' lớn (area=38450px) nhưng thiếu box (max_cov=0.16)"
+    },
+    {
+      "image": "img_0171",
+      "type": "instance_merge",
+      "det_class": "backpack",
+      "pan_class": "backpack",
+      "iou": 0.081,
+      "pixel_coverage": 0.998,
+      "det_bbox": [
+        59.1,
+        187.3,
+        84.4,
+        231.3
+      ],
+      "det_bboxes": [
+        [
+          59.1,
+          187.3,
+          84.4,
+          231.3
+        ],
+        [
+          135.5,
+          281.9,
+          168.4,
+          313.1
+        ]
+      ],
+      "pan_bbox": [
+        59,
+        187,
+        109,
+        126
+      ],
+      "segment_id": 15964588,
+      "note": "1 segment 'backpack' phủ 2 box cùng lớp (cov=[0.52, 0.48])"
+    },
+    {
+      "image": "img_0245",
+      "type": "missing_box",
+      "det_class": null,
+      "pan_class": "toilet",
+      "iou": 0.0,
+      "pixel_coverage": 0.0,
+      "det_bbox": null,
+      "pan_bbox": [
+        378,
+        219,
+        170,
+        261
+      ],
+      "segment_id": 6388878,
+      "note": "segment 'toilet' lớn (area=30816px) nhưng thiếu box (max_cov=0.00)"
+    }
+  ]
+}
