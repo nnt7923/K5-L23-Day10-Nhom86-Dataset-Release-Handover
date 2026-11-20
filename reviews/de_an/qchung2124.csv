@@ -1,5 +1,6 @@
 image,type,verdict,note
-img_0045,class_swap,,
-img_0086,class_swap,,
-img_0166,class_swap,,
-img_0238,class_swap,,
+img_0045,class_swap,confirmed,Ba lô đen đặt dưới gầm bàn làm việc cạnh ghế xoay tím; detection gán nhầm thành handbag trong khi panoptic ghi backpack đúng
+img_0086,class_swap,confirmed,Bàn ăn đen chụp từ trên xuống bày đĩa bánh mì sandwich và salad; detection gán nhầm khung bàn ăn thành chair
+img_0166,class_swap,rejected,Bánh pizza lớn đặt trên thớt gỗ nằm gọn trên mặt bàn ăn nâu tối; khung bàn ăn bao trùm pizza là chồng lấn tự nhiên
+img_0238,class_swap,confirmed,Ghế đơn đặt trong bãi cỏ phía sau dãy dầm gỗ không phải ghế băng; detection gán nhầm thành bench (IoU=0.97)
+img_0238,class_swap,rejected,Ghế bành bọc nệm đặt ngoài bãi cỏ cạnh đống thùng đồ; khung couch và chair chồng lấn tự nhiên (IoU=0.69)

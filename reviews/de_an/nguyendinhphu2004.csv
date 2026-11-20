@@ -1,5 +1,5 @@
 image,type,verdict,note
-img_0028,class_swap,,
-img_0079,missing_box,,
-img_0145,class_swap,,
-img_0224,class_swap,,
+img_0028,class_swap,confirmed,"xe trong ảnh rõ ràng là mô tô (có động cơ, bình xăng, đèn pha lớn), detection ghi bicycle là sai, panoptic ghi motorcycle mới đúng"
+img_0079,missing_box,confirmed,"con mèo vằn đứng trên nắp bồn cầu chiếm gần nửa ảnh, panoptic có mask cat nhưng file nhãn detection chỉ có toilet và sink, thiếu box cat"
+img_0145,class_swap,rejected,"ghế sofa trắng bỏ trên vỉa hè bị gán cả box couch lẫn box chair gần trùng nhau, panoptic chỉ có một segment chair; vật này nhìn giống sofa nên couch hay chair đều hợp lý, không chắc là lỗi"
+img_0224,class_swap,rejected,"box bowl trùng khớp đúng cái đĩa trắng đựng bánh mì, còn bánh sandwich có box riêng; hai vật chồng lên nhau nên code ghép chéo, nhãn hai bên đều đúng"
