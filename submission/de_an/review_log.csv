@@ -1,0 +1,29 @@
+image,type,verdict,note
+img_0006,class_swap,rejected,"Phần lớn xe bị cột che khuất, chỉ thấy một phần thân xe dạng hình hộp. Chưa đủ đặc điểm để khẳng định đây là bus hay truck nên không xác nhận lỗi."
+img_0062,class_swap,confirmed,"Xe có kiểu dáng ô tô con hoặc SUV, mui và khoang hành khách liền thân, không thấy thùng chở hàng. Detection ghi truck không phù hợp, Panoptic ghi car phù hợp hơn."
+img_0129,class_swap,rejected,"Detection gán đúng bowl cho bát đựng rau và dining table cho mặt bàn. Panoptic cũng phân vùng đúng từng vật thể. Thuật toán ghép chéo do các bounding box chồng lấn lớn, không có lỗi tráo nhãn."
+img_0188,class_swap,rejected,"Detection gán dining table cho mặt bàn gỗ, còn Panoptic phân vùng khay đựng thức ăn phía trên. Hai vùng chồng lấn nhưng thuộc hai vật thể khác nhau, chưa có bằng chứng lỗi tráo nhãn."
+img_0054,class_swap,rejected,"người đang cầm ăn một món bánh kẹp; det có hai box hot dog và sandwich chồng lên cùng món đó, pan cũng có hai segment cùng vị trí và cùng lớp, hai nguồn khớp nhau nên không phải đổi nhãn"
+img_0113,class_swap,rejected,"nhiều người đi xe máy trên đường; box person phủ cả xe, det và pan đều có motorcycle cùng vị trí với xe nên ứng viên chỉ do người ngồi chồng lên xe, không phải đổi nhãn"
+img_0169,class_swap,rejected,"xe bán đồ ăn màu xanh bên trái; det có truck trùng khớp segment truck của pan, box bus nằm trên mái trắng có cửa sổ xanh phía sau xe nên là vật bị che, lệch tự nhiên"
+img_0245,missing_box,confirmed,"nhà vệ sinh có bồn cầu trắng ở bên phải ảnh rất rõ và lớn, pan có segment toilet nhưng det chỉ có box sink bên trái, thiếu hẳn box toilet"
+img_0036,class_swap,confirmed,"Ghế sofa trong phòng khách có người chơi game, detection dán nhầm thành bed trong khi panoptic ghi đúng couch"
+img_0082,class_swap,rejected,"Người đàn ông nằm trên ghế sofa da đen dùng laptop; hai vật thể riêng biệt person và couch chồng lấn tự nhiên, nhãn cả hai bên đều đúng"
+img_0146,category_swap,confirmed,"Xe bán tải màu xanh lá có thùng xe rõ ràng, detection ghi truck là đúng còn panoptic dán nhầm thành car (category_swap)"
+img_0226,category_swap,confirmed,"Chiếc ba lô du lịch màu đen đặt trên sân ga, detection ghi đúng backpack còn panoptic dán nhầm thành suitcase (category_swap)"
+img_0057,class_swap,rejected,"người phụ nữ áo đen ngồi đọc sách trên ghế bành đỏ bên phải phòng; khung det chair ôm trọn ghế kể cả hai tay ghế, segment pan person chỉ là người ngồi trong ghế -> hai vật thật chồng lên nhau, lệch tự nhiên, không phải đổi lớp"
+img_0115,class_swap,confirmed,"vật trong khung là bát thuỷ tinh trong suốt miệng rộng đặt sau bánh kem sinh nhật (cốc sứ trắng bên cạnh nhỏ hơn, nằm ngoài khung); det ghi cup là sai, pan ghi bowl đúng"
+img_0171,instance_merge,confirmed,"có hai ba lô riêng biệt: một chiếc xám đen trên lưng người đàn ông đứng ở cửa gỗ, một chiếc đen đặt dưới chân cửa trên bậc thềm; det có 2 box riêng nhưng panoptic gộp thành một segment backpack trải từ lưng người tới bậc thềm"
+img_0028,class_swap,confirmed,"xe trong ảnh rõ ràng là mô tô (có động cơ, bình xăng, đèn pha lớn), detection ghi bicycle là sai, panoptic ghi motorcycle mới đúng"
+img_0079,missing_box,confirmed,"con mèo vằn đứng trên nắp bồn cầu chiếm gần nửa ảnh, panoptic có mask cat nhưng file nhãn detection chỉ có toilet và sink, thiếu box cat"
+img_0145,class_swap,rejected,"ghế sofa trắng bỏ trên vỉa hè bị gán cả box couch lẫn box chair gần trùng nhau, panoptic chỉ có một segment chair; vật này nhìn giống sofa nên couch hay chair đều hợp lý, không chắc là lỗi"
+img_0224,class_swap,rejected,"box bowl trùng khớp đúng cái đĩa trắng đựng bánh mì, còn bánh sandwich có box riêng; hai vật chồng lên nhau nên code ghép chéo, nhãn hai bên đều đúng"
+img_0004,class_swap,rejected,"người đang ngồi trên xe máy: box motorcycle và box person là hai vật chồng lên nhau, code ghép chéo, nhãn hai bên đều đúng"
+img_0061,class_swap,rejected,"vật trên đĩa bị ghi cake ở detection và donut ở panoptic; ảnh mờ sau khi nén lại, không đủ rõ để khẳng định là bánh kem hay donut"
+img_0120,class_swap,rejected,"chiếc túi bị ghi backpack ở detection và handbag ở panoptic; ảnh nhỏ, không thấy rõ quai đeo để phân biệt ba lô hay túi xách"
+img_0178,bbox_drift,confirmed,"box detection car lệch hẳn khỏi chiếc xe, một phần thân xe nằm ngoài box trong khi mask panoptic bao đúng chiếc xe"
+img_0045,class_swap,confirmed,Ba lô đen đặt dưới gầm bàn làm việc cạnh ghế xoay tím; detection gán nhầm thành handbag trong khi panoptic ghi backpack đúng
+img_0086,class_swap,confirmed,Bàn ăn đen chụp từ trên xuống bày đĩa bánh mì sandwich và salad; detection gán nhầm khung bàn ăn thành chair
+img_0166,class_swap,rejected,Bánh pizza lớn đặt trên thớt gỗ nằm gọn trên mặt bàn ăn nâu tối; khung bàn ăn bao trùm pizza là chồng lấn tự nhiên
+img_0238,class_swap,confirmed,Ghế đơn đặt trong bãi cỏ phía sau dãy dầm gỗ không phải ghế băng; detection gán nhầm thành bench (IoU=0.97)
+img_0238,class_swap,rejected,Ghế bành bọc nệm đặt ngoài bãi cỏ cạnh đống thùng đồ; khung couch và chair chồng lấn tự nhiên (IoU=0.69)
