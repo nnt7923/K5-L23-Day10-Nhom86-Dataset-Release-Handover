@@ -1,5 +1,5 @@
 image,type,verdict,note
-img_0054,class_swap,,
-img_0113,class_swap,,
-img_0169,class_swap,,
-img_0245,missing_box,,
+img_0054,class_swap,rejected,"người đang cầm ăn một món bánh kẹp; det có hai box hot dog và sandwich chồng lên cùng món đó, pan cũng có hai segment cùng vị trí và cùng lớp, hai nguồn khớp nhau nên không phải đổi nhãn"
+img_0113,class_swap,rejected,"nhiều người đi xe máy trên đường; box person phủ cả xe, det và pan đều có motorcycle cùng vị trí với xe nên ứng viên chỉ do người ngồi chồng lên xe, không phải đổi nhãn"
+img_0169,class_swap,rejected,"xe bán đồ ăn màu xanh bên trái; det có truck trùng khớp segment truck của pan, box bus nằm trên mái trắng có cửa sổ xanh phía sau xe nên là vật bị che, lệch tự nhiên"
+img_0245,missing_box,confirmed,"nhà vệ sinh có bồn cầu trắng ở bên phải ảnh rất rõ và lớn, pan có segment toilet nhưng det chỉ có box sink bên trái, thiếu hẳn box toilet"
