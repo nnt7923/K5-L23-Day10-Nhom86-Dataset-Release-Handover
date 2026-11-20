@@ -1,5 +1,5 @@
 image,type,verdict,note
-img_0006,class_swap,,
-img_0062,class_swap,,
-img_0129,class_swap,,
-img_0188,class_swap,,
+img_0006,class_swap,rejected,"Phần lớn xe bị cột che khuất, chỉ thấy một phần thân xe dạng hình hộp. Chưa đủ đặc điểm để khẳng định đây là bus hay truck nên không xác nhận lỗi."
+img_0062,class_swap,confirmed,"Xe có kiểu dáng ô tô con hoặc SUV, mui và khoang hành khách liền thân, không thấy thùng chở hàng. Detection ghi truck không phù hợp, Panoptic ghi car phù hợp hơn."
+img_0129,class_swap,rejected,"Detection gán đúng bowl cho bát đựng rau và dining table cho mặt bàn. Panoptic cũng phân vùng đúng từng vật thể. Thuật toán ghép chéo do các bounding box chồng lấn lớn, không có lỗi tráo nhãn."
+img_0188,class_swap,rejected,"Detection gán dining table cho mặt bàn gỗ, còn Panoptic phân vùng khay đựng thức ăn phía trên. Hai vùng chồng lấn nhưng thuộc hai vật thể khác nhau, chưa có bằng chứng lỗi tráo nhãn."
