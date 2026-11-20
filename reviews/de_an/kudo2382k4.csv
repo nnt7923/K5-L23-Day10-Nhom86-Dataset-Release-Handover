@@ -1,4 +1,4 @@
 image,type,verdict,note
-img_0057,class_swap,,
-img_0115,class_swap,,
-img_0171,instance_merge,,
+img_0057,class_swap,rejected,"người phụ nữ áo đen ngồi đọc sách trên ghế bành đỏ bên phải phòng; khung det chair ôm trọn ghế kể cả hai tay ghế, segment pan person chỉ là người ngồi trong ghế -> hai vật thật chồng lên nhau, lệch tự nhiên, không phải đổi lớp"
+img_0115,class_swap,confirmed,"vật trong khung là bát thuỷ tinh trong suốt miệng rộng đặt sau bánh kem sinh nhật (cốc sứ trắng bên cạnh nhỏ hơn, nằm ngoài khung); det ghi cup là sai, pan ghi bowl đúng"
+img_0171,instance_merge,confirmed,"có hai ba lô riêng biệt: một chiếc xám đen trên lưng người đàn ông đứng ở cửa gỗ, một chiếc đen đặt dưới chân cửa trên bậc thềm; det có 2 box riêng nhưng panoptic gộp thành một segment backpack trải từ lưng người tới bậc thềm"
