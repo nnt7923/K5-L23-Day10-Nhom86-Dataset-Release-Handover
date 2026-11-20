@@ -1,5 +1,5 @@
 image,type,verdict,note
-img_0004,class_swap,,
-img_0061,class_swap,,
-img_0120,class_swap,,
-img_0178,bbox_drift,,
+img_0004,class_swap,rejected,"người đang ngồi trên xe máy: box motorcycle và box person là hai vật chồng lên nhau, code ghép chéo, nhãn hai bên đều đúng"
+img_0061,class_swap,rejected,"vật trên đĩa bị ghi cake ở detection và donut ở panoptic; ảnh mờ sau khi nén lại, không đủ rõ để khẳng định là bánh kem hay donut"
+img_0120,class_swap,rejected,"chiếc túi bị ghi backpack ở detection và handbag ở panoptic; ảnh nhỏ, không thấy rõ quai đeo để phân biệt ba lô hay túi xách"
+img_0178,bbox_drift,confirmed,"box detection car lệch hẳn khỏi chiếc xe, một phần thân xe nằm ngoài box trong khi mask panoptic bao đúng chiếc xe"
